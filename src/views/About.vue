@@ -267,7 +267,7 @@ export default {
       }
     },
     back() {
-      this.$router.push("/About");
+      this.$router.push("/");
     },
     next() {
       if (this.age > 100) {
