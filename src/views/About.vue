@@ -177,6 +177,11 @@ export default {
   created() {
     this.rate = this.countries[0].rate;
     this.code = this.countries[0].code;
+    (this.packageSelected = {
+      index: 1,
+      name: "Standard",
+      percent: "",
+    }),
     this.adjustPackageType();
   },
   mounted() {
