@@ -5,7 +5,7 @@
     <p class="my-6">Let's buy some insurance. It is going to take only a few steps.</p>
     <button
       @click="start()"
-      class="bg-blue-500 border border-blue-900 border border-blue-900 text-white font-bold py-2 px-12 rounded"
+      class="bg-blue-500 hover:bg-blue-700 border border-blue-900 text-white font-bold py-2 px-12 rounded"
     >
       Start
     </button>

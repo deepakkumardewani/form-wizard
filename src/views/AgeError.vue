@@ -5,7 +5,7 @@
     <p class="mb-6">We are sorry but we cannot ensure you now.</p>
     <button
       @click="redirectToWelcome()"
-      class="bg-blue-500 border border-blue-900 text-white font-bold py-2 px-24 rounded"
+      class="bg-blue-500 hover:bg-blue-700 border border-blue-900 text-white font-bold py-2 px-24 rounded"
     >Ok :(</button>
   </div>
 </template>
