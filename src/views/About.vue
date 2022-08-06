@@ -215,10 +215,7 @@ export default {
         const percentage = parseInt(this.packageSelected.percent);
         let standardPremium = 10 * this.age * this.rate;
         if (!isNaN(percentage)) {
-          premiumPlus = (
-            (percentage / 100) * standardPremium +
-            standardPremium
-          ).toFixed(0);
+          premiumPlus = (percentage / 100) * standardPremium + standardPremium;
           premium = premiumPlus;
         } else {
           premium = standardPremium;
