@@ -16,10 +16,10 @@
 
 ## Approach
 
-- I used the Vue CLI tool to initialize and create a new Vue project and also add a Github repository
-- Vue CLI was also used to add plugins mentioned below
-- Once the basic project structure was ready, I then created empty pages component like Welcome, About, etc.
-- After that using the wireframes provided I created the UI and UX for every individual page
+- I used the Vue CLI tool to initialize and create a new Vue project and also add a Github repository.
+- Vue CLI was also used to add plugins mentioned below.
+- Once the basic project structure was ready, I then created empty page components like Welcome, About, etc.
+- After that using the wireframes provided I created the UI and UX for every individual page.
 
 ## Plugins
 
