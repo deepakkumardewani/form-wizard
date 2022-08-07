@@ -10,13 +10,13 @@
     <div class="mt-5 inline-flex">
       <button
         @click="back()"
-        class="bg-white mr-4 border border-black text-black py-2 px-12 rounded"
+          class="bg-white hover:bg-gray-800 hover:text-white transition mr-4 border border-black text-black py-2 px-12 rounded"
       >
         Back
       </button>
       <button
         @click="buy()"
-        class="bg-blue-500 hover:bg-blue-700 border border-blue-900 text-white py-2 px-12 rounded"
+          class="bg-blue-500 hover:bg-blue-700 transition border border-blue-900 text-white py-2 px-12 rounded"
       >
         Buy
       </button>

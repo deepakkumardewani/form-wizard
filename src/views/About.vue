@@ -1,8 +1,7 @@
 <template>
   <div>
-
     <div class="form-container mx-auto">
-      <p class="font-bold text-black text-4xl mb-5">Tell us about yourself</p>
+      <p class="font-bold text-black text-4xl my-5">Tell us about yourself</p>
       <form class="form mx-auto">
         <div class="my-5 grid grid-rows-1">
           <label
@@ -78,7 +77,7 @@
       </form>
     </div>
 
-    <div class="package-container py-5 mx-auto">
+    <div class="package-container py-3 mx-auto shadow-2xl shadow-black">
 
       <div class="package-grid mx-auto">
 
@@ -104,26 +103,26 @@
 
       </div>
 
-      <div class="my-10 font-bold text-black text-2xl">Your premium is: {{premium}}</div>
+      <div class="mt-7 mb-5 font-bold text-black text-2xl">Your premium is: {{premium}}</div>
 
       <div class="inline-flex">
         <button
           @click="back()"
-          class="bg-white border border-black mr-4 text-black py-2 px-12 rounded"
+          class="bg-white hover:bg-gray-800 hover:text-white transition border border-black mr-4 text-black py-2 px-12 rounded"
         >
           Back
         </button>
         <button
           v-if="age !== '' && name !== ''"
           @click="next()"
-          class="bg-blue-500 hover:bg-blue-700 border border-blue-900 text-white py-2 px-12 rounded"
+          class="bg-blue-500 hover:bg-blue-700 transition border border-blue-900 text-white py-2 px-12 rounded"
         >
           Next
         </button>
         <button
           v-else
           @click="next()"
-          class="bg-gray-500 hover:bg-gray-700 border border-blue-900 text-white py-2 px-12 rounded"
+          class="bg-gray-500 hover:bg-gray-700 transition border border-blue-900 text-white py-2 px-12 rounded"
           disabled
         >
           Next
@@ -306,5 +305,11 @@ export default {
 .package-container {
   background: rgb(244 244 244);
   width: 50%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 </style>
