@@ -122,7 +122,7 @@
         <button
           v-else
           @click="next()"
-          class="bg-gray-500 hover:bg-gray-700 transition border border-blue-900 text-white py-2 px-12 rounded"
+          class="bg-gray-500 hover:bg-gray-700 cursor-not-allowed transition border border-blue-900 text-white py-2 px-12 rounded"
           disabled
         >
           Next
