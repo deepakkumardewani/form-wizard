@@ -1,7 +1,13 @@
 <template>
   <div id="app">
     <!-- <div id="nav"></div> -->
-    <router-view />
+    <transition
+      name="fade"
+      mode="out-in"
+    >
+
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -14,16 +20,13 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
